@@ -24,7 +24,7 @@ namespace GiftCard.Api.Controllers
         }
 
         [Route("giftcard/{giftCardId}/balance")]
-        [AllowAnonymous]
+        [Authorize]
         [HttpGet]
         public IHttpActionResult Balance(int giftCardId)
         {
